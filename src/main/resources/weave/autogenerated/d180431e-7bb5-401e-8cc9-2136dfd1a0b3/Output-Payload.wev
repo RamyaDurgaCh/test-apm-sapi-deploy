@@ -1,0 +1,9 @@
+%dw 2.0
+
+type auto_d180431e_7bb5_401e_8cc9_2136dfd1a0b3_Output_Payload = {|
+  user1: String, 
+  user2: String, 
+  user3: String, 
+  user4: String
+|}
+

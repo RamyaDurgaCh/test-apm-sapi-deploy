@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+  <servers>
+     <server>
+      <username>~~~Client~~~</username>
+      <password>4a0605594ab54c8b88ec60e71b1b1985~?~71Bf6bc9AE2144FF9361200f56864b39</password>
+      <id>anypoint-exchange-v3</id>
+    </server>
+    <server>
+      <username>openlogix.nexus</username>
+      <password>eCuxYrvY</password>
+      <id>MuleRepository</id>
+    </server>
+    <server>
+      <username>~~~Token~~~</username>
+      <password>651efec4-9571-4bc4-a4e3-99c5a38c6819</password>
+      <id>anypoint-exchange-v2</id>
+    </server> 
+    </servers>
+   <!--
+    <server>
+      <username>~~~Client~~~</username>
+      <password>4bcdc284f38c4bd382059fbbc0da5683~?~1DeA9fe7b3194Eb58d0773C48EE88970</password>
+      <id>anypoint-exchange-v3</id>
+    </server>
+  </servers>
+  -->
+  <profiles>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <releases/>
+          <snapshots/>
+          <id>MuleRepository</id>
+          <name>MuleRepository</name>
+          <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+        </repository>
+      </repositories>
+      <id>Mule</id>
+    </profile>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>anypoint-exchange-v2</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+        </repository>
+        <repository>
+          <id>mulesoft-releases</id>
+          <name>MuleSoft Releases Repository</name>
+          <url>https://repository.mulesoft.org/releases/</url>
+        </repository>
+      </repositories>
+      <id>mule-dev</id>
+    </profile>
+   <profile>
+      <id>Mule</id>
+      <activation>
+         <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+         <repository>
+            <id>mulesoft-releases</id>
+            <name>MuleSoft Repository</name>
+            <url>http://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+         </repository>
+      </repositories>
+   </profile>
+</profiles>
+</settings>
